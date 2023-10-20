@@ -1,0 +1,114 @@
+/* 1. Base Styles
+These are the foundational styles that will be applied throughout 
+the entire webpage.
+Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #26af88;
+    color: #fbfbfb;
+    text-align: center;
+    padding: 20px;
+}
+/* The `body` element sets the default font family to Arial and removes margin 
+and padding, ensuring a clean and consistent starting point.
+The `header` element styles the top header area, setting the background color 
+to dark gray (#333), text color to white (#fff), centering the text, 
+and adding padding.
+
+2. Creating Columns with Flexbox
+This section defines the layout of the main content area, 
+creating three columns using flexbox.
+
+ Create three columns using flexbox */
+.wrap {
+    display: flex;
+}
+
+.content {
+    flex: 1; /* Equal width for all columns */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    background-color: #fbfdfa;
+}
+
+
+/* - The `.wrap` class turns its children into flex items, 
+creating a row of columns.
+The `.content` class is applied to each column, giving them 
+equal width, adding margins, padding, a border, and a light gray background color.
+
+3. Task 1: Colors in CSS
+
+This part focuses on changing the text and background colors.
+
+Task 1: Text Color */
+.color-example h3 {
+    color: #0080ff;
+}
+
+/* Task 2: Background Color */
+.color-example p {
+    background-color: #f4a8e6;
+    margin: 20px;
+}
+
+/* - To change the text color of `<h3>` elements within the 
+`.color-example` div to a shade of blue (#0073e6).
+ To change the background color of `<p>` elements within the 
+ `.color-example` div to a light yellow (#f0d98c).
+
+4. Task 1: Typography in CSS
+This section covers the font family and size of text.
+
+Task 1: Font Family and Size */
+.typography-example p {
+    font-family: 'time new roman', serif;
+    font-size: 20px;
+}
+/* Task 2: Text Alignment and Line Height */
+.typography-example p {
+    text-align: center;
+    line-height: 2;
+}
+
+/* It changes the font family of all `<p>` elements within the 
+`.typography-example` div to 'Georgia' and sets the font size to 20 pixels.
+It aligns text to the right and increases the line height for better readability.
+
+5. Task 1: ID Selector
+In this part, we address styling a unique `<div>` with an ID.*/
+.selector-example{
+    border: 2px solid #5887c9;
+    padding: 10px;
+}
+/*Task 1: ID Selector */
+#uniqueDiv {
+    background-color: #32df52;
+    font-size: 15px;
+    padding: 10%;
+}
+
+/* This styles the element with the ID `uniqueDiv`, setting its 
+background color to a shade of blue (#64b5f6) and the font size to 18 pixels.
+
+6. Task 2: Class Selector
+This section demonstrates styling elements with the same class.
+
+Task 2: Class Selector */
+.info {
+    border: 2px solid #4caf50;
+    padding: 10px;
+}
+.info1 {
+    border: 2px solid #e86db0;
+    padding: 10px;
+}
+
+/* All elements with the class `.info` will have a green border 
+(2 pixels solid) and 10 pixels of padding.
